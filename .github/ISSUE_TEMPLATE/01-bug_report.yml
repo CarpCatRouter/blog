@@ -1,4 +1,4 @@
-name: "\U0001F41B 博客问题反馈"
+name: 🐛 博客问题反馈
 description: 报告浏览博客时遇到的异常（页面打不开、样式崩、资源加载不出来等）
 title: "[Bug] "
 labels: ["bug"]
