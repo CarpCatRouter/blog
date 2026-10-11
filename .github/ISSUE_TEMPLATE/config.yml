@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "\U0001F4AC 讨论 / 提问 / 提建议"
+    url: https://github.com/CarpCatRouter/blog/discussions
+    about: 闲聊、提问、功能建议、文章讨论请到这里，不要开 Issue。
+  - name: "\U0001F41F 博客线上站点"
+    url: https://blog.carpcatrouter.com
+    about: 提交前请先确认问题在线上站点是否依然存在。
