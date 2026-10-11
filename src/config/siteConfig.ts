@@ -95,7 +95,7 @@ export const siteConfig: SiteConfig = {
 	favicon: [
 		{
 			// 图标文件路径
-			src: "/favicon/firefly-32.png",
+			src: "/icons/b_72436eb00ad87bdcef2e155d2b36e490.jpg",
 			// 可选，指定主题 'light' | 'dark'
 			// theme: "light",
 			// 可选，图标大小
@@ -116,8 +116,8 @@ export const siteConfig: SiteConfig = {
 		// 使用 Astro 图标库时不需要设置 valueDark，图标会自动跟随主题亮暗色切换
 		logo: {
 			type: "image",
-			value: "assets/images/logo/firefly-light.png",
-			valueDark: "assets/images/logo/firefly-dark.png",
+			value: "/icons/b_72436eb00ad87bdcef2e155d2b36e490.jpg",
+			valueDark: "/icons/b_72436eb00ad87bdcef2e155d2b36e490.jpg",
 			alt: "🍀",
 		},
 		// 导航栏标题
