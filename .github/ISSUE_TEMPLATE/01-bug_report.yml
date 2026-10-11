@@ -1,58 +1,122 @@
-name: Bug Report
-description: Create a report to help us improve
-title: "[Bug]: "
+name: "\U0001F41B 博客问题反馈"
+description: 报告浏览博客时遇到的异常（页面打不开、样式崩、资源加载不出来等）
+title: "[Bug] "
 labels: ["bug"]
-assignees:
-  - CuteLeaf
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
-  - type: textarea
-    id: bug-description
+        感谢你花时间反馈问题 🐟
+
+        > ⚠️ **提交前请读完这段**
+        > 本模板的每一项必填内容都会被认真阅读。**信息不全、胡乱填写、明显随手填的 Issue 将被直接关闭并标记 `invalid` 或 `wontfix`，不再另行通知。**
+        > 提问、闲聊、功能建议请移步 [Discussions](https://github.com/CarpCatRouter/blog/discussions)，不要开 Issue。
+
+  - type: input
+    id: page-url
     attributes:
-      label: Describe the bug
-      description: A clear and concise description of what the bug is.
+      label: 问题页面地址
+      description: 出问题的具体页面链接。只填首页或填 "博客" 视为无效反馈。
+      placeholder: https://blog.carpcatrouter.com/posts/xxxx
     validations:
       required: true
-  - type: textarea
-    id: to-reproduce
+
+  - type: dropdown
+    id: category
     attributes:
-      label: To Reproduce
-      description: Steps to reproduce the behavior.
-      placeholder: |
-        1. Go to '...'
-        2. Click on '....'
-        3. Scroll down to '....'
-        4. See error
+      label: 问题类型
+      description: 选一个最接近的分类，选错会拖慢排查
+      options:
+        - 技术 —— 页面白屏 / 完全打不开
+        - 技术 —— 样式错乱 / 排版崩坏
+        - 技术 —— 脚本报错 / 功能失效（搜索、目录、主题切换、代码高亮等）
+        - 技术 —— 评论 / 讨论区加载不出来
+        - 网络 —— CSS、JS 加载慢或超时
+        - 网络 —— 图片 / 头像 / 字体不显示
+        - 网络 —— CDN 被拦截 / 证书错误 / 被墙
+        - 内容 —— 文章错别字 / 事实错误
+        - 内容 —— 站内链接失效 / 404
+        - 移动端 —— 手机浏览器适配异常
+        - 其他（必须在下方详细说明）
     validations:
       required: true
-  - type: textarea
-    id: expected-behavior
+
+  - type: input
+    id: browser
     attributes:
-      label: Expected behavior
-      description: A clear and concise description of what you expected to happen.
+      label: 浏览器及版本
+      description: 必须写明浏览器名称和完整版本号。地址栏输入 chrome://version 可查看。只填 "Chrome" 视为无效。
+      placeholder: 例：Chrome 131.0.6778.86 / Edge 131.0.2903.86 / Safari 18.1 / Firefox 133.0 / 微信内置浏览器
     validations:
       required: true
+
   - type: dropdown
     id: os
     attributes:
-      label: OS
-      multiple: true
+      label: 操作系统
       options:
         - Windows
         - macOS
         - Linux
         - Android
         - iOS
-  - type: input
-    id: browser
-    attributes:
-      label: Browser
-      placeholder: e.g. chrome, safari
+        - 其他
+    validations:
+      required: true
+
   - type: textarea
-    id: additional-context
+    id: detail
     attributes:
-      label: Additional context
-      description: Add any other context about the problem here.
+      label: 详细描述
+      description: 说清你做了什么、看到了什么、期望看到什么。有截图或控制台报错请一并贴出。
+      placeholder: |
+        1. 我做了什么：
+        2. 实际看到的：
+        3. 期望看到的：
+        4. 控制台报错（F12 → Console）：
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 复现步骤
+      description: 能稳定复现的问题才会被优先处理。填 "不知道" 或留空会被直接关闭。
+      placeholder: |
+        1. 打开 xxx
+        2. 点击 xxx
+        3. 出现 xxx
+    validations:
+      required: true
+
+  - type: input
+    id: occurred-at
+    attributes:
+      label: 问题出现的时间
+      description: 尽量具体到分钟并注明时区。若从一开始就如此，请填 "持续存在"。
+      placeholder: 例：2026-10-11 20:30（北京时间 UTC+8）
+    validations:
+      required: true
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: 出现频率
+      options:
+        - 每次都出现
+        - 经常出现（约一半概率）
+        - 偶尔出现
+        - 只出现过一次
+        - 持续存在，从未正常
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我已尝试刷新页面 / 清除缓存 / 无痕模式，问题依旧存在
+          required: true
+        - label: 我填写的信息真实完整，不是随手乱填
+          required: true
