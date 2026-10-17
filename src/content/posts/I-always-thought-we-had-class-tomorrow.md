@@ -1,12 +1,11 @@
 ---
-title: Firefly 代码块示例
+title: Firefly 直以为周日要上课哈哈哈
 published: 2026-10-17
 pinned: false
-description: 这一周一直以为周日要上课哈哈哈
+description: 一直以为周日要上课哈哈哈，现在才后知后觉...  ...
 tags: [Markdown]
 category: 个人杂谈
 image: ./images/firefly3.avif
-slug: code-examples
 ---
 
 ##前言
