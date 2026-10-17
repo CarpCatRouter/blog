@@ -1,11 +1,10 @@
 ---
-title: Firefly 直以为周日要上课哈哈哈
+title: 一直以为周日要上课哈哈哈
 published: 2026-10-17
 pinned: false
-description: 一直以为周日要上课哈哈哈，现在才后知后觉...  ...
+description: 一直以为周日要上课哈哈哈，现在才后知后觉明天不用上课...  ...
 tags: [Markdown]
 category: 个人杂谈
-image: ./images/firefly3.avif
 ---
 
 ##前言
